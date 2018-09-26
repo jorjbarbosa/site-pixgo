@@ -1,0 +1,64 @@
+h2 {
+  color: #2e85cf;
+}
+.form-control {
+  border-radius: 0;
+  min-height: 45px;
+}
+.btn-primary {
+  background-color: #2e85cf;
+  border-radius: 0;
+  min-width: 150px;
+  float: left;
+}
+section {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+.bg-pixgo {
+  background-color: #2e85cf !important;
+}
+.active {
+  border-bottom: 2px solid rgb(31, 201, 31);
+  padding-bottom: -10px;
+}
+#inicio {
+  position: relative;
+  background-image: url('../images/group-3.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -0 -110px;
+}
+#info {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+/* Linhas de Pesquisa */
+.item-pesquisa {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+}
+.item-pesquisa img {
+  width: 150px;
+}
+.i-block {
+  display: inline-block;
+  margin: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0;
+  }
+  .img-sm {
+    display: none;
+  }
+  #inicio {
+    background-position: center;
+    width: 100%;
+  }
+}

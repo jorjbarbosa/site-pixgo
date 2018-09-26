@@ -13,7 +13,7 @@
       if (target.length) {
         $('html, body').animate(
           {
-            scrollTop: target.offset().top - 440
+            scrollTop: target.offset().top - 40
           },
           1000,
           'easeInOutExpo'

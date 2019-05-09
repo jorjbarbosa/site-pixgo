@@ -135,8 +135,47 @@
         </tbody>
       </table>
       </div>
-      <div class="tab-pane fade" id="resumos" role="tabpanel" aria-labelledby="resumos-tab">resumos</div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      <div class="tab-pane fade" id="resumos" role="tabpanel" aria-labelledby="resumos-tab">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Título do Resumo</th>
+              <th scope="col">Autores</th>
+              <th scope="col">Conferencia</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Acessar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
+              </td>
+              <td>
+                John Doe, Adam Smith
+              </td>
+              <td>ICCE Berlin</td>
+              <td>2019</td>
+              <td>
+              <a href="#" class="btn btn-pixgo">Acessar</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
+              </td>
+              <td>
+                John Doe, Adam Smith
+              </td>
+              <td>ICCE Berlin</td>
+              <td>2019</td>
+              <td>
+              <a href="#" class="btn btn-pixgo">Acessar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>

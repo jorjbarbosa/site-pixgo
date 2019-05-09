@@ -18,6 +18,29 @@
           Projetos de Pesquisa
         </a>
       </div>
+      <div class="col-md-6">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="<?php echo URLROOT; ?>/img/slides/slide1.webp" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="<?php echo URLROOT; ?>/img/slides/slide2.webp" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="<?php echo URLROOT; ?>/img/slides/slide4.webp" alt="Third slide">
+          </div>
+        </div>
+        <a data-scroll-ignore class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a data-scroll-ignore class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
     </div>
   </div>
 </section>
@@ -213,11 +236,11 @@
     </div>
   </div>
 </section>   
-<!-- <section id="parceiros">
+<section id="parceiros bg-pixgo">
   <div class="container">
     <h1 class="title">NOSSOS PARCEIROS</h1>
   </div>
-</section> -->
+</section>
 <section id="galeria">
   <div class="container">
     <h1 class="title">GALERIA DE FOTOS</h1>

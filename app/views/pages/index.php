@@ -73,7 +73,7 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card-pesquisa text-center">
           <div class="icone-pesquisa">
-            <img src="<?php echo URLROOT;?>/img/industria.png" alt="">
+            <img src="<?php echo URLROOT;?>/img/educacao.png" alt="">
           </div>
           <h4>Educação 4.0</h4>
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>

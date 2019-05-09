@@ -11,7 +11,7 @@
   <title><?php echo SITENAME; ?></title>
 </head>
 <body>
-  <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark bg-pixgo shadow">
+  <nav data-scroll-header class="navbar navbar-expand-lg navbar-dark bg-pixgo fixed-top shadow">
     <div class="container">
       <a class="navbar-brand" href="#inicio">
         <img src="<?php echo URLROOT;?>/img/logo.webp" width="150" alt="">
@@ -34,9 +34,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#publicacoes">Publicações</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#eventos">Eventos</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#equipe">Equipe</a>
           </li>

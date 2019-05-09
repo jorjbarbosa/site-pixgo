@@ -29,8 +29,11 @@
             <a class="nav-link" href="#quem-somos">Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projetos">Projetos</a>
+            <a class="nav-link" href="#pesquisa">Áreas de Pesquisa</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#publicacoes">Publicações</a>
           </li>

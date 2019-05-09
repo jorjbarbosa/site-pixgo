@@ -14,14 +14,14 @@
       <div class="col-md-6">
         <p class="description-gray text-justify">O PixGo! é um laboratório atuante em pesquisas e desenvolvimento de softwares, com foco em áreas de tecnologias emergentes. Aliando sua experiência acumulada na indústria de software e infraestrutura tecnológica com sua capacidade produtiva, tem como premissa auxiliar alunos e professores à atingir seus objetivos. Sempre investindo em tecnologia de ponta e alunos de altíssimo nível, neste sentido, o PixGo! oferece a combinação ideal, entre estratégias para o melhor aprendizado e desenvolvimento de soluções.</p>
         <p class="description-gray text-justify">As soluções desenvolvidas abrangem todos os atuantes do laboratório, afim de aplicar melhores soluções a determinados problemas que ocorrem nos mais diversas áreas de aplicação e desenvolvimento de software. A PixGo! desenvolve soluções por meio de uma metodologia testada e implementada nos mais diversos cenários, utilizando fortes componentes de avaliação de contexto, análise de alternativas e proposições de soluções que abrangem todo o mercado. PixGo! evoluiu junto ao mercado de tecnologia da informação, sempre direcionado a oferecer a seus alunos aprendizados cada vez mais flexíveis, capazes de gerar agilidade, eficiência e ganho de experiência.</p>
-        <a href="#" class="btn btn-pixgo">
+        <a href="#" class="btn btn-lg btn-pixgo">
           Projetos de Pesquisa
         </a>
       </div>
     </div>
   </div>
 </section>
-<section id="areas-pesquisa" class="bg-gray">
+<section id="pesquisa" class="bg-gray">
   <div class="container">
     <h1 class="title">ÁREAS DE PESQUISA</h1>
     <div class="row">
@@ -85,6 +85,59 @@
 <section id="publicacoes">
   <div class="container">
     <h1 class="title">PUBLICAÇÕES</h1>
+    <ul class="nav justify-content-center nav-tabs bg-pixgo" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a data-scroll-ignore class="nav-link active" id="artigos-tab" data-toggle="tab" href="#artigos" role="tab" aria-controls="artigos" aria-selected="true">Artigos</a>
+      </li>
+      <li class="nav-item">
+        <a data-scroll-ignore class="nav-link" id="resumos-tab" data-toggle="tab" href="#resumos" role="tab" aria-controls="artigos" aria-selected="false">Resumos</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="artigos" role="tabpanel" aria-labelledby="artigos-tab">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Título do Artigo</th>
+            <th scope="col">Autores</th>
+            <th scope="col">Conferencia</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Acessar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
+            </td>
+            <td>
+              John Doe, Adam Smith
+            </td>
+            <td>ICCE Berlin</td>
+            <td>2019</td>
+            <td>
+            <a href="#" class="btn btn-pixgo">Acessar</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
+            </td>
+            <td>
+              John Doe, Adam Smith
+            </td>
+            <td>ICCE Berlin</td>
+            <td>2019</td>
+            <td>
+            <a href="#" class="btn btn-pixgo">Acessar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="tab-pane fade" id="resumos" role="tabpanel" aria-labelledby="resumos-tab">resumos</div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
   </div>
 </section>
 <!-- <section id="eventos" class="bg-gray">

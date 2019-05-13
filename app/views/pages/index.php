@@ -123,25 +123,12 @@
           <tr>
             <th scope="col">Título do Artigo</th>
             <th scope="col">Autores</th>
-            <th scope="col">Conferencia</th>
+            <th scope="col">Conferência</th>
             <th scope="col">Ano</th>
             <th scope="col">Acessar</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
-            </td>
-            <td>
-              John Doe, Adam Smith
-            </td>
-            <td>ICCE Berlin</td>
-            <td>2019</td>
-            <td>
-            <a href="#" class="btn btn-pixgo">Acessar</a>
-            </td>
-          </tr>
           <tr>
             <td>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
@@ -164,25 +151,12 @@
             <tr>
               <th scope="col">Título do Resumo</th>
               <th scope="col">Autores</th>
-              <th scope="col">Conferencia</th>
+              <th scope="col">Conferência</th>
               <th scope="col">Ano</th>
               <th scope="col">Acessar</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
-              </td>
-              <td>
-                John Doe, Adam Smith
-              </td>
-              <td>ICCE Berlin</td>
-              <td>2019</td>
-              <td>
-              <a href="#" class="btn btn-pixgo">Acessar</a>
-              </td>
-            </tr>
             <tr>
               <td>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
@@ -236,14 +210,49 @@
     </div>
   </div>
 </section>   
-<section id="parceiros bg-pixgo">
+<!-- <section id="parceiros" class="bg-gray">
   <div class="container">
     <h1 class="title">NOSSOS PARCEIROS</h1>
+    
   </div>
-</section>
+</section> -->
 <section id="galeria">
   <div class="container">
     <h1 class="title">GALERIA DE FOTOS</h1>
   </div>
 </section>  
+<section id="contato">
+  <div class="container">
+   <h1 class="title">ENTRE EM CONTATO</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Universidade Federal do Amazonas - UFAM </p>
+        <p>Instituto de Ciências Exatas e Tecnologia em Itacoatiara - ICET</p>
+        <p>Laboratório 303</p>
+        <p>Rua Nossa Senhora do Rosário, 3863, Tiradentes.  Itacoatiara, AM - Brasil.</p>
+        <p>CEP: 69103-128      E-mail: vandermi@ufam.edu.br</p>
+        <p>Telefone: (92) 99254-7005 - (92) 8125-2248</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1880.1115305438514!2d-58.4306586788348!3d-3.142806723696285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926f544670d3fc23%3A0x8bde91222107db8d!2sUniversidade+Federal+do+Amazonas+-+Instituto+de+Ci%C3%AAncias+Exatas+e+Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1557758907804!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+      <div class="col-md-6">
+        <form action="#" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="nome" placeholder="Nome Completo">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="seu@email.com">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="assunto" placeholder="Assunto">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="msg" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+          </div>
+          <input type="submit" class="btn btn-pixgo float-right" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 <?php require APPROOT . '/views/inc/footer.php'; ?>

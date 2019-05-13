@@ -4,6 +4,10 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+html {
+  margin: 0;
+  padding: 0;
+}
 .bg-pixgo {
   background-color: #4267b2;
 }
@@ -138,4 +142,54 @@ section {
   height: 500px;
   background-color: #f6f6f6;
   overflow-y: scroll;
+}
+#parceiros img {
+  width: 200px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 58px;
+  font-size: 14px;
+  /* padding-top: 2px; */
+}
+.footer p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+.socials a {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 5px;
+  transition: all 0.3s ease 0s;
+}
+.socials a:hover {
+  color: #a4cb45;
+}
+.form-control {
+  border-radius: 0;
+  padding: 15px 10;
+}
+#contato .btn-pixgo {
+  width: 150px;
+}
+#contato {
+  font-family: 'Roboto', sans-serif;
+}
+#contato p {
+  font-weight: 100;
 }

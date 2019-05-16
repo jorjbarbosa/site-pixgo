@@ -3,7 +3,7 @@
   define('DB_HOST', 'localhost');
   define('DB_USER', 'root');
   define('DB_PASS', '04081996');
-  define('DB_NAME', 'pixgo_db');
+  define('DB_NAME', 'mydb');
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));

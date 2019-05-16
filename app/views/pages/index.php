@@ -129,19 +129,15 @@
           </tr>
         </thead>
         <tbody>
+        <?php foreach($data['artigos'] as $artigo):?>
           <tr>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
-            </td>
-            <td>
-              John Doe, Adam Smith
-            </td>
-            <td>ICCE Berlin</td>
-            <td>2019</td>
-            <td>
-            <a href="#" class="btn btn-pixgo">Acessar</a>
-            </td>
+            <td><?php echo $artigo->titulo;?></td>
+            <td><?php echo $artigo->autores;?></td>
+            <td><?php echo $artigo->conferencia;?></td>
+            <td><?php echo $artigo->ano;?></td>
+            <td><a href="<?php echo $artigo->url;?>" class="btn btn-pixgo">Acessar</a></td>
           </tr>
+        <?php endforeach;?>
         </tbody>
       </table>
       </div>
@@ -157,19 +153,15 @@
             </tr>
           </thead>
           <tbody>
+          <?php foreach($data['resumos'] as $resumo):?>
             <tr>
-              <td>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ex nemo officia tempore!
-              </td>
-              <td>
-                John Doe, Adam Smith
-              </td>
-              <td>ICCE Berlin</td>
-              <td>2019</td>
-              <td>
-              <a href="#" class="btn btn-pixgo">Acessar</a>
-              </td>
+              <td><?php echo $resumo->titulo;?></td>
+              <td><?php echo $resumo->autores;?></td>
+              <td><?php echo $resumo->conferencia;?></td>
+              <td><?php echo $resumo->ano;?></td>
+              <td><a href="<?php echo $resumo->url;?>" class="btn btn-pixgo">Acessar</a></td>
             </tr>
+          <?php endforeach;?>
           </tbody>
         </table>
       </div>

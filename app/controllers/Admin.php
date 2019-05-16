@@ -2,6 +2,7 @@
   class Admin extends Controller {
     public function __construct(){
      $this->membroModel = $this->model('Membro');
+     $this->publicacaoModel = $this->model('Publicacao');
     }
     
     public function index(){
@@ -36,6 +37,25 @@
       
      
       $this->view('admin/cadastrar-membro', $data);
+    }
+    public function cadastrar_publicacao() {
+      $data = [];
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $data = [
+          'titulo' => trim($_POST['titulo']),
+          'autores' => trim($_POST['autores']),
+          'conferencia' => trim($_POST['conferencia']),
+          'ano' => trim($_POST['ano']),
+          'url' => trim($_POST['url']),
+          'tipo_publicacao' => trim($_POST['tipo'])
+        ];
+        if($this->publicacaoModel->cadastrarPublicacao($data)) {
+          echo 'ok';
+        } else {
+          echo 'erro';
+        }
+      }
+      $this->view('admin/cadastrar-publicacao');
     }
 
   }

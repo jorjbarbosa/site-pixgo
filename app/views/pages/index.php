@@ -182,31 +182,66 @@
   </div>
 </section> -->
 <section id="equipe" class="bg-gray">
-  <div class="container">
+  <div class="container text-center">
     <h1 class="title">EQUIPE</h1>
-    <div class="ui link cards">
-      <div class="card">
-        <div class="image">
-          <img src="<?php echo URLROOT;?>/img/user.png">
-        </div>
-        <div class="content">
-          <div class="header">Jorge Barbosa</div>
-          <div class="meta">
-            <a>Pesquisador</a>
-          </div>
-          <div class="description">
-            Data Science
-          </div>
-        </div>
-        <div class="extra content">
-          <span class="left floated">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </span>
-        </div>
+    <div class="member-card text-center">
+      <div class="img-membro">
+        <img src="<?php echo URLROOT;?>/img/user.png">
       </div>
-    
+      <div class="info">
+        <h4>John Doe</h4>
+        <p>Pesquisador</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="member-card text-center">
+      <div class="img-membro">
+        <img src="<?php echo URLROOT;?>/img/user.png">
+      </div>
+      <div class="info">
+        <h4>John Doe</h4>
+        <p>Pesquisador</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="member-card text-center">
+      <div class="img-membro">
+        <img src="<?php echo URLROOT;?>/img/user.png">
+      </div>
+      <div class="info">
+        <h4>John Doe</h4>
+        <p>Pesquisador</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="member-card text-center">
+      <div class="img-membro">
+        <img src="<?php echo URLROOT;?>/img/user.png">
+      </div>
+      <div class="info">
+        <h4>John Doe</h4>
+        <p>Pesquisador</p>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </div>
 </section>   
@@ -230,9 +265,10 @@
         <p>Instituto de Ciências Exatas e Tecnologia em Itacoatiara - ICET</p>
         <p>Laboratório 303</p>
         <p>Rua Nossa Senhora do Rosário, 3863, Tiradentes.  Itacoatiara, AM - Brasil.</p>
-        <p>CEP: 69103-128      E-mail: vandermi@ufam.edu.br</p>
+        <p>CEP: 69103-128</p>
+        <p>E-mail: vandermi@ufam.edu.br</p>
         <p>Telefone: (92) 99254-7005 - (92) 8125-2248</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1880.1115305438514!2d-58.4306586788348!3d-3.142806723696285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926f544670d3fc23%3A0x8bde91222107db8d!2sUniversidade+Federal+do+Amazonas+-+Instituto+de+Ci%C3%AAncias+Exatas+e+Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1557758907804!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1880.1115305438514!2d-58.4306586788348!3d-3.142806723696285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926f544670d3fc23%3A0x8bde91222107db8d!2sUniversidade+Federal+do+Amazonas+-+Instituto+de+Ci%C3%AAncias+Exatas+e+Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1557758907804!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       </div>
       <div class="col-md-6">

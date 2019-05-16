@@ -2,8 +2,8 @@
   #4267B2; 
   #a4cb45
 */
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 html {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ html {
   background-color: #4267b2;
 }
 .btn-pixgo {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   display: inline-block;
   border: 1px solid transparent;
   font-size: 15px;
@@ -35,7 +35,7 @@ html {
   background-color: #f6f6f6;
 }
 .description-gray {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #242424;
   font-weight: 100;
 }
@@ -45,7 +45,7 @@ html {
   margin: 0px auto 25px auto;
   border-bottom: 2px solid #a4cb45;
   width: 400px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 100;
 }
@@ -64,7 +64,7 @@ section {
   padding-top: 25px;
 }
 #inicio {
-  background-image: url('../img/bg-2.jpg'),
+  background-image: url("../img/bg-2.jpg"),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: center;
@@ -73,11 +73,11 @@ section {
   position: relative;
 }
 #inicio h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 .nav-link {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -110,7 +110,7 @@ section {
 }
 .card-pesquisa h4 {
   font-size: 20px;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   color: #4267b2;
 }
 .card-pesquisa p {
@@ -167,18 +167,8 @@ body {
 .footer p {
   margin-bottom: 0;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
-}
-.socials a {
-  font-size: 18px;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0 5px;
-  transition: all 0.3s ease 0s;
-}
-.socials a:hover {
-  color: #a4cb45;
 }
 .form-control {
   border-radius: 0;
@@ -188,8 +178,51 @@ body {
   width: 150px;
 }
 #contato {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #contato p {
   font-weight: 100;
+}
+
+/* card membros */
+.member-card {
+  width: 260px;
+  height: 350px;
+  border-radius: 2%;
+  overflow: hidden;
+  border: 1px solid #d3d3d3;
+  transition: all 0.3s ease 0s;
+  margin: 5px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+.member-card:hover {
+  box-shadow: 0px 20px 20px 0px rgba(40, 25, 114, 0.1);
+}
+.img-membro {
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 25px auto;
+  border: 5px solid #4267b2;
+}
+.img-membro img {
+  width: 100%;
+}
+.info p {
+  color: #797979;
+  font-weight: 100;
+  line-height: 5px;
+}
+.socials a {
+  font-size: 25px;
+  color: #797979;
+  text-decoration: none;
+  padding: 0 5px;
+  transition: all 0.3s ease 0s;
+  bottom: 0;
+}
+.socials a:hover {
+  color: #4267b2;
 }

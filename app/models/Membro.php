@@ -1,12 +1,13 @@
 <?php 
   class Membro {
-    public function _construct() {
+    public function __construct() {
       $this->db = new Database;
     }
 
     public function getMembros() {
       $sql = "SELECT * FROM membros";
-      $membros = $this->db->resultSet($sql);
+      $this->db->query($sql);
+      $membros = $this->db->resultSet();
       return $membros;
     }
     public function getMembrosById($id_membro) {

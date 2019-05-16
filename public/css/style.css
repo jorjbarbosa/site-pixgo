@@ -184,6 +184,12 @@ body {
   font-weight: 100;
 }
 
+.membros {
+  padding-bottom: 25px;
+}
+#equipe {
+  min-height: 100% !important;
+}
 /* card membros */
 .member-card {
   width: 260px;

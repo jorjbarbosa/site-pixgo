@@ -16,15 +16,13 @@
       return $membro;
     }
     public function cadastrarMembro($dados) {
-      $sql = "INSERT INTO membros ('nome', 'email', 'titulacao', 'area_pesquisa', 'facebook', 'linkedin', 'github') VALUES (:nome, :email, :titulacao, :area_pesquisa, :facebook, :linkedin, :github)";
-      $this->db->bind(':nome', $data['nome']);
-      $this->db->bind(':email', $data['email']);
-      $this->db->bind(':titulacao', $data['titulacao']);
-      $this->db->bind(':area_pesquisa', $data['area_pesquisa']);
-      $this->db->bind(':facebook', $data['facebook']);
-      $this->db->bind(':linkedin', $data['linkedin']);
-      $this->db->bind(':github', $data['github']);
-
+      $this->db->query("INSERT INTO `membros` (`id`, `nome`, `area_pesquisa`, `facebook`, `linkedin`, `github`, `foto`) VALUES (NULL, :nome, :area_pesquisa, :facebook, :linkedin, :github, :foto);");
+      $this->db->bind(':nome', $dados['nome']);
+      $this->db->bind(':area_pesquisa', $dados['area_pesquisa']);
+      $this->db->bind(':facebook', $dados['facebook']);
+      $this->db->bind(':linkedin', $dados['linkedin']);
+      $this->db->bind(':github', $dados['github']);
+      $this->db->bind(':foto', $dados['foto']);
       if($this->db->execute()) {
         return true;
       } else {

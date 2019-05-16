@@ -5,11 +5,11 @@
     }
     
     public function index(){
-      // $this->membroModel->getMembros();
+      $membros = $this->membroModel->getMembros();
       $data = [
         'title' => 'Pixgo',
-      ];
-     
+        'membros' => $membros
+      ];     
       $this->view('pages/index', $data);
     }
   }

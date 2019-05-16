@@ -184,65 +184,24 @@
 <section id="equipe" class="bg-gray">
   <div class="container text-center">
     <h1 class="title">EQUIPE</h1>
-    <div class="member-card text-center">
-      <div class="img-membro">
-        <img src="<?php echo URLROOT;?>/img/user.png">
+    <div class="membros owl-carousel">
+    <?php foreach($data['membros'] as $membro): ?>
+      <div class="member-card text-center">
+        <div class="img-membro">
+          <img src="<?php echo URLROOT.'/img/membros/'.$membro->foto;?>">
+        </div>
+        <div class="info">
+          <h4><?php echo $membro->nome;?></h4>
+          <p><?php echo $membro->area_pesquisa;?></p>
+        </div>
+        <div class="socials">
+          <a href="<?php echo $membro->facebook;?>"><i class="fab fa-facebook-square"></i></a>
+          <a href="<?php echo $membro->linkedin;?>"><i class="fab fa-linkedin"></i></a>
+          <a href="<?php echo $membro->github;?>"><i class="fab fa-github"></i></a>
+        </div>
       </div>
-      <div class="info">
-        <h4>John Doe</h4>
-        <p>Pesquisador</p>
-      </div>
-      <div class="socials">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-
-    <div class="member-card text-center">
-      <div class="img-membro">
-        <img src="<?php echo URLROOT;?>/img/user.png">
-      </div>
-      <div class="info">
-        <h4>John Doe</h4>
-        <p>Pesquisador</p>
-      </div>
-      <div class="socials">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-
-    <div class="member-card text-center">
-      <div class="img-membro">
-        <img src="<?php echo URLROOT;?>/img/user.png">
-      </div>
-      <div class="info">
-        <h4>John Doe</h4>
-        <p>Pesquisador</p>
-      </div>
-      <div class="socials">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-
-    <div class="member-card text-center">
-      <div class="img-membro">
-        <img src="<?php echo URLROOT;?>/img/user.png">
-      </div>
-      <div class="info">
-        <h4>John Doe</h4>
-        <p>Pesquisador</p>
-      </div>
-      <div class="socials">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
+    <?php endforeach;?>
+    </div>  
   </div>
 </section>   
 <!-- <section id="parceiros" class="bg-gray">

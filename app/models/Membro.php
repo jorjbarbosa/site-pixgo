@@ -11,12 +11,12 @@
       return $membros;
     }
     public function getMembrosById($id_membro) {
-      $sql = "SELECT * FROM membros WHERE id_membro = :id_membro";
+      $this->db->query("SELECT * FROM membros WHERE id_membro = :id_membro");
       $membro = $this->db->single($sql);
       return $membro;
     }
     public function cadastrarMembro($dados) {
-      $this->db->query("INSERT INTO `membros` (`id`, `nome`, `area_pesquisa`, `facebook`, `linkedin`, `github`, `foto`) VALUES (NULL, :nome, :area_pesquisa, :facebook, :linkedin, :github, :foto);");
+      $this->db->query("INSERT INTO `membros` (`id_membro`, `nome`, `area_pesquisa`, `facebook`, `linkedin`, `github`, `foto`) VALUES (NULL, :nome, :area_pesquisa, :facebook, :linkedin, :github, :foto);");
       $this->db->bind(':nome', $dados['nome']);
       $this->db->bind(':area_pesquisa', $dados['area_pesquisa']);
       $this->db->bind(':facebook', $dados['facebook']);

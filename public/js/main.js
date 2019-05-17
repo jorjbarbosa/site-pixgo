@@ -12,3 +12,6 @@ owl.owlCarousel({
   autoplayTimeout: 2000,
   autoplayHoverPause: true
 });
+$(document).ready(function() {
+  $("#lightgallery").lightGallery();
+});

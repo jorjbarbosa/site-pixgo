@@ -1,14 +1,16 @@
 <?php 
   class Galeria {
-    
+    public function __construct() {
+      $this->db = new Database;
+    }
     public function getGalerias() {
-      $this->db->query("SELECT * FROM galeira");
+      $this->db->query("SELECT * FROM galeria");
       $galeria = $this->db->resultSet();
       return $galeria;
     }
 
     public function getGaleriaById($id_galeria) {
-      $this->db->query("SELECT * FROM galeira WHERE id_galeria = :id_galeria");
+      $this->db->query("SELECT * FROM galeria WHERE id_galeria = :id_galeria");
       $this->db->bind('id_galeria', $id_galeria);
       $galeria = $this->db->single();
       return $galeria;
@@ -23,7 +25,7 @@
 
     public function cadastrarGaleria($data) {
       $this->db->query("INSERT INTO galeria (`id_galeria`, `descricao`) VALUES (null, :id_galeria)");
-      $this->db->bind(':descricao', $descricao);
+      $this->db->bind(':descricao', $data['descricao']);
       if($this->db->execute()) {
         return true;
       } else {

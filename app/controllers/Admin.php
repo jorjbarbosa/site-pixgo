@@ -25,7 +25,9 @@
       $this->view('admin/membros', $data);
     }
     public function cadastrar_membro() {
-      $data = [''];
+      $data = [
+        'title' => 'Cadastrar Membro'
+      ];
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $ext = strtolower(substr($_FILES['foto']['name'], -4));
         $novo_nome = md5(time()) . $ext;
@@ -49,7 +51,9 @@
       $this->view('admin/cadastrar-membro', $data);
     }
     public function cadastrar_publicacao() {
-      $data = [];
+      $data = [
+        'title' => 'Cadastrar Publicação'
+      ];
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data = [
           'titulo' => trim($_POST['titulo']),
@@ -65,7 +69,7 @@
           echo 'erro';
         }
       }
-      $this->view('admin/cadastrar-publicacao');
+      $this->view('admin/cadastrar-publicacao', $data);
     }
 
   }

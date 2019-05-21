@@ -135,7 +135,7 @@
             <td><?php echo $artigo->autores;?></td>
             <td><?php echo $artigo->conferencia;?></td>
             <td><?php echo $artigo->ano;?></td>
-            <td><a href="<?php echo $artigo->url;?>" class="btn btn-pixgo">Acessar</a></td>
+            <td><a href="<?php echo $artigo->url;?>" class="btn btn-pixgo" target="_blank">Acessar</a></td>
           </tr>
         <?php endforeach;?>
         </tbody>
@@ -159,7 +159,7 @@
               <td><?php echo $resumo->autores;?></td>
               <td><?php echo $resumo->conferencia;?></td>
               <td><?php echo $resumo->ano;?></td>
-              <td><a href="<?php echo $resumo->url;?>" class="btn btn-pixgo">Acessar</a></td>
+              <td><a href="<?php echo $resumo->url;?>" target="_blank" class="btn btn-pixgo">Acessar</a></td>
             </tr>
           <?php endforeach;?>
           </tbody>
@@ -187,9 +187,9 @@
           <p><?php echo $membro->area_pesquisa;?></p>
         </div>
         <div class="socials">
-          <a href="<?php echo $membro->facebook;?>"><i class="fab fa-facebook-square"></i></a>
-          <a href="<?php echo $membro->linkedin;?>"><i class="fab fa-linkedin"></i></a>
-          <a href="<?php echo $membro->github;?>"><i class="fab fa-github"></i></a>
+          <a href="<?php echo $membro->facebook;?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="<?php echo $membro->linkedin;?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="<?php echo $membro->github;?>" target="_blank"><i class="fab fa-github"></i></a>
         </div>
       </div>
     <?php endforeach;?>

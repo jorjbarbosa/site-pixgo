@@ -10,9 +10,10 @@
       $membros = $this->db->resultSet();
       return $membros;
     }
-    public function getMembrosById($id_membro) {
+    public function getMembroById($id_membro) {
       $this->db->query("SELECT * FROM membros WHERE id_membro = :id_membro");
-      $membro = $this->db->single($sql);
+      $this->db->bind(':id_membro', $id_membro);
+      $membro = $this->db->single();
       return $membro;
     }
     public function cadastrarMembro($dados) {

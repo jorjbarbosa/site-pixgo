@@ -32,19 +32,19 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="<?php echo URLROOT;?>/admin">
                   <span data-feather="home"></span>
                   Início <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="<?php echo URLROOT;?>/admin/membros">
                   <span data-feather="file"></span>
                   Membros
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="<?php echo URLROOT;?>/admin/publicacoes">
                   <span data-feather="shopping-cart"></span>
                   Publicações
                 </a>

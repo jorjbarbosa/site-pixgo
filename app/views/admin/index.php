@@ -15,12 +15,12 @@
             <div class="card-admin">
               <i class="fas fa-copy"></i>
               <h4>Publicação</h4>
-              <a href="<?php echo URLROOT;?>/admin/membros">Detalhes</a>
+              <a href="<?php echo URLROOT;?>/admin/publicacoes">Detalhes</a>
             </div>
             <div class="card-admin">
               <i class="fas fa-images"></i>
               <h4>Galeria</h4>
-              <a href="<?php echo URLROOT;?>/admin/membros">Detalhes</a>
+              <a href="<?php echo URLROOT;?>/admin/galeria">Detalhes</a>
             </div>
           </div>
         </div>

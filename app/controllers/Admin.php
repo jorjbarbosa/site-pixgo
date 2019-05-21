@@ -12,10 +12,12 @@
      
       $this->view('admin/index', $data);
     }
+
     public function show($id) {
       $data = [];
       $this->view('galeria/index', $data);
     }
+
     public function membros() {
       $membros = $this->membroModel->getMembros();
       $data = [
@@ -24,6 +26,31 @@
       ];
       $this->view('admin/membros', $data);
     }
+    public function editar_membro($id) {
+      $membro = $this->membroModel->getMembroById($id);
+      $data = [
+        'title' => 'Editar Membro',
+        'membro' => $membro
+      ];
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+      }
+      $this->view('admin/editar-membro', $data);
+    }
+    public function excluir_membro($id_membro) {
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $this->membroModel->excluir_membro($id_membro);
+      }
+    }
+    public function publicacoes() {
+      $publicacoes = $this->publicacaoModel->getArtigos();
+      $data = [
+        'title' => 'Publicações',
+        'publicacoes' => $publicacoes
+      ];
+      $this->view('admin/publicacoes', $data);
+    }
+
     public function cadastrar_membro() {
       $data = [
         'title' => 'Cadastrar Membro'
@@ -46,10 +73,9 @@
           'erro';
         }
       }
-      
-     
       $this->view('admin/cadastrar-membro', $data);
     }
+
     public function cadastrar_publicacao() {
       $data = [
         'title' => 'Cadastrar Publicação'

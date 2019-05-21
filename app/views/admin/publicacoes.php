@@ -4,29 +4,27 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header bg-pixgo text-white">
-            Membros Cadastrados
+            Publicações Cadastradas
           </div>
           <div class="card-body bg-light ">
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Área de Pesquisa</th>
+                  <th scope="col">Título</th>
                   <th scope="col"></th>
                 </tr>
               </thead>
               <tbody>
-                <?php foreach($data['membros'] as $membro) :?>
+                <?php foreach($data['publicacoes'] as $publicacao) :?>
                 <tr>
-                  <th scope="row"><?php echo $membro->id_membro;?></th>
-                  <td><?php echo $membro->nome;?></td>
-                  <td><?php echo $membro->area_pesquisa;?></td>
+                  <th scope="row"><?php echo $publicacao->id_publicacao;?></th>
+                  <td><?php echo $publicacao->titulo;?></td>
                   <td>
-                    <form action="<?php echo URLROOT.'/admin/excluir_membro/'.$membro->id_membro;?>" class="form-aux float-right ">
+                    <form action="<?php echo URLROOT.'/admin/excluir_publicacao/'.$membro->id_membro;?>" class="form-aux float-right ">
                       <input type="submit" class="btn btn-danger" value="Excluir">
                     </form>
-                    <a href="<?php echo URLROOT.'/admin/editar_membro/'.$membro->id_membro;?>" class="btn btn-primary float-right mr-2">Editar</a>
+                    <a href="<?php echo URLROOT.'/admin/editar_publicacao/'.$membro->id_membro;?>" class="btn btn-primary float-right mr-2">Editar</a>
                   </td>
                   
                 </tr>
@@ -35,7 +33,7 @@
             </table>
           </div>
         </div>
-        <a href="<?php echo URLROOT;?>/admin/cadastrar_membro" class="btn btn-pixgo float-right mt-3">Cadastrar Membro</a>
+        <a href="<?php echo URLROOT;?>/admin/cadastrar_publicacao" class="btn btn-pixgo float-right mt-3">Cadastrar Publicação</a>
       </div>
     </div>
   </div>

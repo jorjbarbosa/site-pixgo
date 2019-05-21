@@ -1,0 +1,234 @@
+/* 
+  #4267B2; 
+  #a4cb45
+*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+html {
+  margin: 0;
+  padding: 0;
+}
+.bg-pixgo {
+  background-color: #4267b2;
+}
+.btn-pixgo {
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 500;
+  /* padding: 12px 54px; */
+  border-radius: 4px;
+  color: #242424;
+  border: 1px solid #4267b2;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn-pixgo:hover {
+  background-color: #4267b2;
+  color: #ffffff;
+}
+.bg-gray {
+  background-color: #f6f6f6;
+}
+.description-gray {
+  font-family: "Roboto", sans-serif;
+  color: #242424;
+  font-weight: 100;
+}
+.title {
+  text-align: center !important;
+  color: #4267b2;
+  margin: 0px auto 25px auto;
+  border-bottom: 2px solid #a4cb45;
+  width: 400px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.center {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+}
+section {
+  min-height: 100vh;
+  padding-top: 25px;
+}
+#inicio {
+  background-image: url("../img/bg-2.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  position: relative;
+}
+#inicio h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.nav-link {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #a9cf45;
+}
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #a9cf45;
+}
+/* Card Areas de Pesquisa */
+.card-pesquisa {
+  padding: 45px 30px;
+  transition: all 0.3s ease 0s;
+}
+.card-pesquisa .icone-pesquisa {
+  margin-bottom: 30px;
+}
+.icone-pesquisa img {
+  width: 150px;
+}
+.card-pesquisa:hover {
+  background: #fff;
+  box-shadow: 0px 20px 20px 0px rgba(40, 25, 114, 0.1);
+}
+.card-pesquisa h4 {
+  font-size: 20px;
+  font-family: "Oswald";
+  color: #4267b2;
+}
+.card-pesquisa p {
+  font-size: 15px;
+}
+
+#parceiros {
+  min-height: 50vh !important;
+}
+#myTab .nav-item a {
+  color: #fff;
+  font-size: 18px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #a4cb45 !important;
+  background-color: #4267b2;
+}
+.nav-tabs .nav-link {
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-tabs .nav-item {
+  margin-bottom: 0px;
+  padding: 5px 0;
+}
+.tab-content {
+  height: 500px;
+  background-color: #f6f6f6;
+  overflow-y: scroll;
+}
+#parceiros img {
+  width: 200px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 58px;
+  font-size: 14px;
+  /* padding-top: 2px; */
+}
+.footer p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.form-control {
+  border-radius: 0;
+  padding: 15px 10;
+}
+#contato .btn-pixgo {
+  width: 150px;
+}
+#contato {
+  font-family: "Roboto", sans-serif;
+}
+#contato p {
+  font-weight: 100;
+}
+
+.membros {
+  padding-bottom: 25px;
+}
+#equipe {
+  min-height: 100% !important;
+}
+/* card membros */
+.member-card {
+  width: 260px;
+  height: 350px;
+  border-radius: 2%;
+  overflow: hidden;
+  border: 1px solid #d3d3d3;
+  transition: all 0.3s ease 0s;
+  margin: 5px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+.member-card:hover {
+  box-shadow: 0px 20px 20px 0px rgba(40, 25, 114, 0.1);
+}
+.img-membro {
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 25px auto;
+  border: 5px solid #4267b2;
+}
+.img-membro img {
+  width: 100%;
+}
+.info p {
+  color: #797979;
+  font-weight: 100;
+  line-height: 5px;
+}
+.socials a {
+  font-size: 25px;
+  color: #797979;
+  text-decoration: none;
+  padding: 0 5px;
+  transition: all 0.3s ease 0s;
+  bottom: 0;
+}
+.socials a:hover {
+  color: #4267b2;
+}

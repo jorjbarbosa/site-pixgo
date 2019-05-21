@@ -29,6 +29,7 @@
         return false;
       }
     }
+<<<<<<< HEAD
     public function editarMembro($data) {
       $this->db->query("UPDATE membros SET nome = :nome, area_pesquisa = :area_pesquisa, facebook = :facebook, linkedin = :linkedin, github = :github, foto = :foto");
       $this->db->bind(':nome', $dados['nome']);
@@ -46,6 +47,8 @@
     public function excluirFoto($foto) {
       
     }
+=======
+>>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
 
   }
 ?>

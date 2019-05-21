@@ -25,9 +25,7 @@
       $this->view('admin/membros', $data);
     }
     public function cadastrar_membro() {
-      $data = [
-        'title' => 'Cadastrar Membro'
-      ];
+      $data = [''];
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $ext = strtolower(substr($_FILES['foto']['name'], -4));
         $novo_nome = md5(time()) . $ext;

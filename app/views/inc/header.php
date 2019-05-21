@@ -11,11 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.css">
-<<<<<<< HEAD
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/pixgo.css">
-=======
-  <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/style.css">
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
   <title><?php echo SITENAME; ?></title>
 </head>
 <body>

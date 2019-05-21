@@ -54,11 +54,7 @@
             <img src="<?php echo URLROOT;?>/img/iot.png" alt="">
           </div>
           <h4>Internet das Coisas</h4>
-<<<<<<< HEAD
-          <!-- <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p> -->
-=======
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
@@ -67,11 +63,7 @@
             <img src="<?php echo URLROOT;?>/img/machine.png" alt="">
           </div>
           <h4>Machine Learning</h4>
-<<<<<<< HEAD
-          <!-- <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p> -->
-=======
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
@@ -80,11 +72,7 @@
             <img src="<?php echo URLROOT;?>/img/industria.png" alt="">
           </div>
           <h4>Industria 4.0</h4>
-<<<<<<< HEAD
-          <!-- <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p> -->
-=======
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
@@ -93,11 +81,7 @@
             <img src="<?php echo URLROOT;?>/img/healthcare.png" alt="">
           </div>
           <h4>Healthcare</h4>
-<<<<<<< HEAD
-          <!-- <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p> -->
-=======
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
@@ -106,11 +90,7 @@
             <img src="<?php echo URLROOT;?>/img/robotic.png" alt="">
           </div>
           <h4>Automação e Robótica</h4>
-<<<<<<< HEAD
-          <!-- <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p> -->
-=======
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
@@ -119,11 +99,7 @@
             <img src="<?php echo URLROOT;?>/img/educacao.png" alt="">
           </div>
           <h4>Educação 4.0</h4>
-<<<<<<< HEAD
-          <!-- <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p> -->
-=======
           <p class="description-gray">Man greater image shall land air winged replenish whose winged great fifth fruitful Set days sealand over great</p>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
         </div>
       </div>
     </div>

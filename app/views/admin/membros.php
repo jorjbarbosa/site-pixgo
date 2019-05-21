@@ -14,7 +14,6 @@
                   <th scope="col">Nome</th>
                   <th scope="col">Área de Pesquisa</th>
                   <th scope="col"></th>
-                  <th scope="col"></th>
                 </tr>
               </thead>
               <tbody>
@@ -23,8 +22,12 @@
                   <th scope="row"><?php echo $membro->id_membro;?></th>
                   <td><?php echo $membro->nome;?></td>
                   <td><?php echo $membro->area_pesquisa;?></td>
-                  <td><a href="#" class="btn btn-primary">Editar</a></td>
-                  <td><a href="#" class="btn btn-danger ">Excluir</a></td>
+                  <td>
+                    
+                    <a href="#" class="btn btn-danger float-right">Excluir</a>
+                    <a href="#" class="btn btn-primary float-right">Editar</a>
+                  </td>
+                  
                 </tr>
                 <?php endforeach;?>
               </tbody>

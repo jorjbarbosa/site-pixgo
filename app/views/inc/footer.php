@@ -15,10 +15,6 @@
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
-<<<<<<< HEAD
   <script src="<?php echo URLROOT; ?>/js/pixgo.js"></script>
-=======
-  <script src="<?php echo URLROOT; ?>/js/main.js"></script>
->>>>>>> 0b1025f7d493ffa492fe8633c32a4cb8a4aa52f5
 </body>
 </html>

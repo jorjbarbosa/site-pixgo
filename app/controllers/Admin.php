@@ -98,9 +98,7 @@
     }
 
     public function cadastrar_publicacao() {
-      $data = [
-        'title' => 'Cadastrar Publicação'
-      ];
+      
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data = [
           'titulo' => trim($_POST['titulo']),
@@ -108,15 +106,20 @@
           'conferencia' => trim($_POST['conferencia']),
           'ano' => trim($_POST['ano']),
           'url' => trim($_POST['url']),
-          'tipo_publicacao' => trim($_POST['tipo'])
+          'resumo' => trim($_POST['resumo'])
         ];
         if($this->publicacaoModel->cadastrarPublicacao($data)) {
           echo 'ok';
         } else {
           echo 'erro';
         }
+      } else {
+        $data = [
+          'title' => 'Cadastrar Publicação'
+        ];
+        $this->view('admin/cadastrar-publicacao', $data);
       }
-      $this->view('admin/cadastrar-publicacao', $data);
+      
     }
     public function excluir_publicacao($id_publicacao) {
       if($_SERVER['REQUEST_METHOD'] == 'POST') {

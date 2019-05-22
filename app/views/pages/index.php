@@ -122,8 +122,8 @@
             <p><span class="font-weight-bold">Autores:</span> <?php echo $artigo->autores;?></p>
             <p><span class="font-weight-bold">Conferencia:</span> <?php echo $artigo->conferencia;?></p>
             <p><span class="font-weight-bold">Ano:</span> <?php echo $artigo->ano;?></p>
-            <p><span class="font-weight-bold">Resumo:</span> <?php echo $artigo->Resumo;?></p>
-            <a href="<?php echo $artigo->url;?>" class="btn btn-pixgo">Acessar</a>
+            <p class="text-justify"><span class="font-weight-bold">Resumo:</span> <?php echo $artigo->resumo;?></p>
+            <a href="<?php echo $artigo->url;?>" class="btn btn-pixgo" target="_blank">Acessar</a>
           </div>
         </div>
         <?php endforeach;?>

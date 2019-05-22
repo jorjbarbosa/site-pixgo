@@ -9,7 +9,6 @@
     public function index(){
       $membros = $this->membroModel->getMembros();
       $artigos = $this->publicacaoModel->getArtigos();
-      $resumos = $this->publicacaoModel->getResumos();
       $galeria = $this->galeriaModel->getGalerias();
       $thumbnails = [];
       foreach ($galeria as $g) {
@@ -19,7 +18,6 @@
         'title' => 'Pixgo',
         'membros' => $membros,
         'artigos' => $artigos,
-        'resumos' => $resumos,
         'galeria' => $galeria
       ];     
       $this->view('pages/index', $data);

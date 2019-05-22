@@ -24,10 +24,8 @@
           <input type="text" name="url" class="form-control">
         </div>
         <div class="form-group">
-          <select name="tipo" class="form-control">
-            <option value="artigo">Artigo</option>
-            <option value="resumo">Resumo</option>
-          </select>
+          <label for="resumo">Resumo</label>
+          <textarea name="resumo"cols="30" rows="10" class="form-control"></textarea>
         </div>
        
         <input type="submit" value="Enviar" class="btn btn-pixgo btn-block">

@@ -2,8 +2,8 @@
   #4267B2; 
   #a4cb45
 */
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 html {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ html {
   background-color: #4267b2;
 }
 .btn-pixgo {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   display: inline-block;
   border: 1px solid transparent;
   font-size: 15px;
@@ -35,7 +35,7 @@ html {
   background-color: #f6f6f6;
 }
 .description-gray {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #242424;
   font-weight: 100;
 }
@@ -45,7 +45,7 @@ html {
   margin: 0px auto 25px auto;
   border-bottom: 2px solid #a4cb45;
   width: 400px;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 36px;
   font-weight: 100;
 }
@@ -64,7 +64,7 @@ section {
   padding-top: 25px;
 }
 #inicio {
-  background-image: url("../img/bg-2.jpg"),
+  background-image: url('../img/bg-2.jpg'),
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: center;
@@ -73,11 +73,11 @@ section {
   position: relative;
 }
 #inicio h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 .nav-link {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 400;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -110,7 +110,7 @@ section {
 }
 .card-pesquisa h4 {
   font-size: 20px;
-  font-family: "Oswald";
+  font-family: 'Oswald';
   color: #4267b2;
 }
 .card-pesquisa p {
@@ -142,6 +142,7 @@ section {
   height: 500px;
   background-color: #f6f6f6;
   overflow-y: scroll;
+  padding: 20px;
 }
 #parceiros img {
   width: 200px;
@@ -167,7 +168,7 @@ body {
 .footer p {
   margin-bottom: 0;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
 .form-control {
@@ -178,7 +179,7 @@ body {
   width: 150px;
 }
 #contato {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 #contato p {
   font-weight: 100;

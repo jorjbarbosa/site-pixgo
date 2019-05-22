@@ -112,58 +112,21 @@
       <li class="nav-item">
         <a data-scroll-ignore class="nav-link active" id="artigos-tab" data-toggle="tab" href="#artigos" role="tab" aria-controls="artigos" aria-selected="true">Artigos</a>
       </li>
-      <li class="nav-item">
-        <a data-scroll-ignore class="nav-link" id="resumos-tab" data-toggle="tab" href="#resumos" role="tab" aria-controls="artigos" aria-selected="false">Resumos</a>
-      </li>
     </ul>
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="artigos" role="tabpanel" aria-labelledby="artigos-tab">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Título do Artigo</th>
-            <th scope="col">Autores</th>
-            <th scope="col">Conferência</th>
-            <th scope="col">Ano</th>
-            <th scope="col">Acessar</th>
-          </tr>
-        </thead>
-        <tbody>
         <?php foreach($data['artigos'] as $artigo):?>
-          <tr>
-            <td><?php echo $artigo->titulo;?></td>
-            <td><?php echo $artigo->autores;?></td>
-            <td><?php echo $artigo->conferencia;?></td>
-            <td><?php echo $artigo->ano;?></td>
-            <td><a href="<?php echo $artigo->url;?>" class="btn btn-pixgo" target="_blank">Acessar</a></td>
-          </tr>
+        <div class="card shadow mb-3">
+          <div class="card-body">
+            <p><span class="font-weight-bold">Título:</span> <?php echo $artigo->titulo;?></p>
+            <p><span class="font-weight-bold">Autores:</span> <?php echo $artigo->autores;?></p>
+            <p><span class="font-weight-bold">Conferencia:</span> <?php echo $artigo->conferencia;?></p>
+            <p><span class="font-weight-bold">Ano:</span> <?php echo $artigo->ano;?></p>
+            <p><span class="font-weight-bold">Resumo:</span> <?php echo $artigo->Resumo;?></p>
+            <a href="<?php echo $artigo->url;?>" class="btn btn-pixgo">Acessar</a>
+          </div>
+        </div>
         <?php endforeach;?>
-        </tbody>
-      </table>
-      </div>
-      <div class="tab-pane fade" id="resumos" role="tabpanel" aria-labelledby="resumos-tab">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Título do Resumo</th>
-              <th scope="col">Autores</th>
-              <th scope="col">Conferência</th>
-              <th scope="col">Ano</th>
-              <th scope="col">Acessar</th>
-            </tr>
-          </thead>
-          <tbody>
-          <?php foreach($data['resumos'] as $resumo):?>
-            <tr>
-              <td><?php echo $resumo->titulo;?></td>
-              <td><?php echo $resumo->autores;?></td>
-              <td><?php echo $resumo->conferencia;?></td>
-              <td><?php echo $resumo->ano;?></td>
-              <td><a href="<?php echo $resumo->url;?>" target="_blank" class="btn btn-pixgo">Acessar</a></td>
-            </tr>
-          <?php endforeach;?>
-          </tbody>
-        </table>
       </div>
     </div>
   </div>

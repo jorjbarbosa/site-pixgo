@@ -28,5 +28,14 @@
         return false;
       }
     }
+    public function excluirPublicacao($id_publicacao) {
+      $this->db->query("DELETE FROM publicacao WHERE id_publicacao = :id_publicacao");
+      $this->db->bind(':id_publicacao', $id_publicacao);
+      if($this->db->execute()) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 ?>

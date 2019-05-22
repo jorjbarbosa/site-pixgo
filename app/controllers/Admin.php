@@ -118,5 +118,14 @@
       }
       $this->view('admin/cadastrar-publicacao', $data);
     }
+    public function excluir_publicacao($id_publicacao) {
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if($this->publicacaoModel->excluirPublicacao($id_publicacao)){
+            echo 'tudo ok';
+        } else {
+          die('nada ok');
+        }
+      }
+    }
 
   }

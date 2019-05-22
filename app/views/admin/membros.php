@@ -23,7 +23,7 @@
                   <td><?php echo $membro->nome;?></td>
                   <td><?php echo $membro->area_pesquisa;?></td>
                   <td>
-                    <form action="<?php echo URLROOT.'/admin/excluir_membro/'.$membro->id_membro;?>" class="form-aux float-right ">
+                    <form action="<?php echo URLROOT.'/admin/excluir_membro/'.$membro->id_membro;?>" class="form-aux float-right " method="post">
                       <input type="submit" class="btn btn-danger" value="Excluir">
                     </form>
                     <a href="<?php echo URLROOT.'/admin/editar_membro/'.$membro->id_membro;?>" class="btn btn-primary float-right mr-2">Editar</a>

@@ -44,8 +44,22 @@
         return false;
       }
     }
+    public function excluirMembro($id_membro) {
+      $this->db->query("DELETE FROM membros WHERE id_membro = :id_membro");
+      $this->db->bind(':id_membro', $id_membro);
+      if($this->db->execute()) {
+        return true;
+      } else {
+        return false;
+      }
+    }
     public function excluirFoto($foto) {
-      
+      $arquivo = $_SERVER['DOCUMENT_ROOT'].'/site-pixgo/public/img/membros/'.$foto;
+      if(unlink($arquivo)) {
+        return true;
+      } else {
+        return false;
+      }
     }
 
   }

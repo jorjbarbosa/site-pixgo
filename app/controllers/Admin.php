@@ -38,8 +38,15 @@
       $this->view('admin/editar-membro', $data);
     }
     public function excluir_membro($id_membro) {
+      $membro = $this->membroModel->getMembroById($id_membro);
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $this->membroModel->excluir_membro($id_membro);
+        if($this->membroModel->excluirMembro($id_membro)){
+          if($this->membroModel->excluirFoto($membro->foto)){
+            echo 'tudo ok';
+          } else {
+            echo 'nada ok';
+          }
+        }
       }
     }
     public function publicacoes() {

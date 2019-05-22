@@ -21,10 +21,10 @@
                   <th scope="row"><?php echo $publicacao->id_publicacao;?></th>
                   <td><?php echo $publicacao->titulo;?></td>
                   <td>
-                    <form action="<?php echo URLROOT.'/admin/excluir_publicacao/'.$membro->id_membro;?>" class="form-aux float-right ">
+                    <form action="<?php echo URLROOT.'/admin/excluir_publicacao/'.$publicacao->id_publicacao;?>" class="form-aux float-right ">
                       <input type="submit" class="btn btn-danger" value="Excluir">
                     </form>
-                    <a href="<?php echo URLROOT.'/admin/editar_publicacao/'.$membro->id_membro;?>" class="btn btn-primary float-right mr-2">Editar</a>
+                    <a href="<?php echo URLROOT.'/admin/editar_publicacao/'.$publicacao->id_publicacao;?>" class="btn btn-primary float-right mr-2">Editar</a>
                   </td>
                   
                 </tr>

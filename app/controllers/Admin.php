@@ -121,10 +121,35 @@
       }
       
     }
+    public function editar_publicacao($id) {
+      $publicacao = $this->publicacaoModel->getPublicacaoById($id);
+      if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $data = [
+          'id_publicacao' => $id,
+          'titulo' => trim($_POST['titulo']),
+          'autores' => trim($_POST['autores']),
+          'conferencia' => trim($_POST['conferencia']),
+          'ano' => trim($_POST['ano']),
+          'url' => trim($_POST['url']),
+          'resumo' => trim($_POST['resumo'])
+        ];
+        if($this->publicacaoModel->editarPublicacao($data)){
+          redirect('admin/publicacoes');
+        } else {
+          die('erro');
+        }
+      } else {
+        $data = [
+          'title' => 'Editar Publicação',
+          'publicacao' => $publicacao
+        ];
+        $this->view('admin/editar-publicacao', $data);
+      }
+    }
     public function excluir_publicacao($id_publicacao) {
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if($this->publicacaoModel->excluirPublicacao($id_publicacao)){
-            echo 'tudo ok';
+          redirect('admin/publicacoes');
         } else {
           die('nada ok');
         }

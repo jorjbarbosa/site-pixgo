@@ -27,15 +27,29 @@
       $this->view('admin/membros', $data);
     }
     public function editar_membro($id) {
-      $membro = $this->membroModel->getMembroById($id);
-      $data = [
-        'title' => 'Editar Membro',
-        'membro' => $membro
-      ];
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+        $data = [
+          'nome' => trim($_POST['nome']),
+          'area_pesquisa' => trim($_POST['area_pesquisa']),
+          'facebook' => trim($_POST['facebook']),
+          'linkedin' => trim($_POST['linkedin']),
+          'github' => trim($_POST['github']),
+          'id_membro' => $id
+        ];
+        if($this->membroModel->editarMembro($data)){
+          echo 'ok';
+        } else {
+          die('erro');
+        }
+      } else {
+        $membro = $this->membroModel->getMembroById($id);
+        $data = [
+          'title' => 'Editar Membro',
+          'membro' => $membro
+        ];
+        $this->view('admin/editar-membro', $data);
       }
-      $this->view('admin/editar-membro', $data);
+      
     }
     public function excluir_membro($id_membro) {
       $membro = $this->membroModel->getMembroById($id_membro);
@@ -44,7 +58,7 @@
           if($this->membroModel->excluirFoto($membro->foto)){
             echo 'tudo ok';
           } else {
-            echo 'nada ok';
+            die('nada ok');
           }
         }
       }

@@ -30,14 +30,14 @@
         return false;
       }
     }
-    public function editarMembro($data) {
-      $this->db->query("UPDATE membros SET nome = :nome, area_pesquisa = :area_pesquisa, facebook = :facebook, linkedin = :linkedin, github = :github, foto = :foto");
+    public function editarMembro($dados) {
+      $this->db->query("UPDATE membros SET nome = :nome, area_pesquisa = :area_pesquisa, facebook = :facebook, linkedin = :linkedin, github = :github WHERE id_membro = :id_membro");
       $this->db->bind(':nome', $dados['nome']);
       $this->db->bind(':area_pesquisa', $dados['area_pesquisa']);
       $this->db->bind(':facebook', $dados['facebook']);
       $this->db->bind(':linkedin', $dados['linkedin']);
       $this->db->bind(':github', $dados['github']);
-      $this->db->bind(':foto', $dados['foto']);
+      $this->db->bind(':id_membro', $dados['id_membro']);
       if($this->db->execute()) {
         return true;
       } else {

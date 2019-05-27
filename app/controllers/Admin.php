@@ -1,6 +1,9 @@
 <?php
   class Admin extends Controller {
     public function __construct(){
+      if(!isLoggedInAdmin()){
+        redirect('pages/login');
+      }
      $this->membroModel = $this->model('Membro');
      $this->publicacaoModel = $this->model('Publicacao');
     }
@@ -56,7 +59,7 @@
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if($this->membroModel->excluirMembro($id_membro)){
           if($this->membroModel->excluirFoto($membro->foto)){
-            echo 'tudo ok';
+            redirect('admin/membros');
           } else {
             die('nada ok');
           }
@@ -89,7 +92,7 @@
         ];
         $caminho = $_SERVER['DOCUMENT_ROOT'].'/site-pixgo/public/img/membros/';
         if($this->membroModel->cadastrarMembro($data) && move_uploaded_file($_FILES['foto']['tmp_name'], $caminho.$novo_nome)){
-          echo 'ok';
+          redirect('admin/membros');
         } else {
           'erro';
         }
@@ -109,7 +112,7 @@
           'resumo' => trim($_POST['resumo'])
         ];
         if($this->publicacaoModel->cadastrarPublicacao($data)) {
-          echo 'ok';
+          redirect('admin/publicacoes');
         } else {
           echo 'erro';
         }
@@ -149,7 +152,7 @@
     public function excluir_publicacao($id_publicacao) {
       if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if($this->publicacaoModel->excluirPublicacao($id_publicacao)){
-          redirect('admin/publicacoes');
+            redirect('admin/publicacoes');
         } else {
           die('nada ok');
         }

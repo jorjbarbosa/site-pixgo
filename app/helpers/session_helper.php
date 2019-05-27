@@ -26,8 +26,8 @@
     }
   }
 
-  function isLoggedIn(){
-    if(isset($_SESSION['user_id'])){
+  function isLoggedInAdmin(){
+    if($_SESSION['tipo_usuario'] == '0'){
       return true;
     } else {
       return false;

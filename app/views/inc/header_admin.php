@@ -21,7 +21,7 @@
       <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-center" href="#"><img src="<?php echo URLROOT;?>/img/logo.webp" width="100" alt=""></a>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sair</a>
+          <a class="nav-link" href="<?php echo URLROOT;?>/pages/sair">Sair</a>
         </li>
       </ul>   
     </nav>
